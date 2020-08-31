@@ -39,16 +39,6 @@ class FirstPageBody extends StatelessWidget {
         children: [
           Text("Hello, $message!"),
           RaisedButton(
-            child: Text("Go to Second"),
-            onPressed: () {
-              Navigator.pushNamed(context, '/second',
-                      arguments: {'message': message})
-                  .then((value) => Scaffold.of(context).showSnackBar(SnackBar(
-                        content: Text(value as String),
-                      )));
-            },
-          ),
-          RaisedButton(
             child: Text("Back"),
             onPressed: () {
               Navigator.pop(context);
