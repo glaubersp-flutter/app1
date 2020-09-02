@@ -162,7 +162,7 @@ class _State extends State<DefaultAppBarDemo>
               icon: Icon(Icons.radio_button_checked),
               color: Colors.white,
               tooltip: "convex button example",
-              onPressed: () => Navigator.of(context).pushNamed('/fab'),
+              onPressed: () => Navigator.of(context).pop(),
             )
           ],
         ),
